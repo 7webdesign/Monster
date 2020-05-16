@@ -1,4 +1,5 @@
 const ATTACK_VALUE = 10;
+const STRONG_ATTACK_VALUE = 17;
 const MONSTER_ATTACK_VALUE = 14;
 
 let chosenMaxlife = 100;
@@ -22,7 +23,7 @@ alert('You have a draw!');
 }
 
 function strongAttackHandler() {
-        const damage = dealMonsterDamage(ATTACK_VALUE);
+        const damage = dealMonsterDamage(STRONG_ATTACK_VALUE);
         currentMonsterHealth -= damage;
         const playerDamage = dealPlayerDamage(MONSTER_ATTACK_VALUE);
         currentPlayerHealth -= playerDamage;
